@@ -2,7 +2,7 @@
 
 หลังจากที่เราลง Environment ต่างๆที่จำเป็นกันจบครบแล้ว ขั้นตอนต่อไป จะเป็นการสร้างบ้านให้กับเจ้า capybara.
 
-1. อันดับแรก ให้สร้าง Folder เอาชื่อตามงานที่ทำ หรือเอาที่ชอบๆละกัน เช่น capybara เลยเล่นง่ายดีฮะ :D.
+อันดับแรก ให้สร้าง Folder เอาชื่อตามงานที่ทำ หรือเอาที่ชอบๆละกัน เช่น capybara เลยเล่นง่ายดีฮะ :D.
 
 ```
 C:\>mkdir capybara
@@ -27,10 +27,27 @@ C:\capybara\features>mkdir steps
 ```gem
 source 'https://rubygems.org'
 
-gem 'cucumber-rails', '0.3.2'
-gem 'capybara', '0.4.0.rc'
+gem 'cucumber-rails', '0.3.2'  #Necessary and Compatible for IE Browser
+gem 'capybara', '0.4.0.rc'     #Necessary and Compatible for IE Browser
 ```
 
+เรียบร้อยแล้ว อันดับต่อไป สร้างไฟล์ env.rb ที่ path C:\capybara\features\support
 
+```ruby
+require 'capybara/cucumber'
+require 'selenium-webdriver'  #require for ie browser
+require 'rubygems'				    #require for ie browser
+require 'rspec/expectations'	#require for ie browser
 
-2. 
+#Capybara.app = "http://www.dealfish.co.th"
+Capybara.app = "http://10.182.247.147:9093/masters/servlet/masters"
+#Capybara.run_server = false
+#Capybara.app_host = 'http://www.dealfish.co.th'
+Capybara.app_host = 'http://10.182.247.147:9093/masters/servlet/masters'
+Capybara.default_selector = :css
+#Capybara.default_driver = :mechanize
+Capybara.default_driver = :selenium
+Capybara.register_driver :selenium do |app|			#require for ie browser
+  Capybara::Selenium::Driver.new(app, :browser => :internet_explorer )
+end
+```
