@@ -1,8 +1,8 @@
 #ขั้นตอนการติดตั้ง Cucumber on Windows Step by Step
 
-ดาวน์โหลด Rails Installer Package จาก [http://railsinstaller.org/en](http://railsinstaller.org/en) สำหรับระบบปฏิบัติการ Windows สำหรับ version ที่ผู้เขียนดาวน์โหลด เป็นตัว Ruby 1.9 ที่ประกอบด้วย Environment ต่างๆในตัวเดียว(เกือบครบครัน)
+อันดับแรก ดาวน์โหลด Rails Installer Package จาก [http://railsinstaller.org/en](http://railsinstaller.org/en) สำหรับระบบปฏิบัติการ Windows สำหรับ version ที่ผู้เขียนดาวน์โหลด เป็นตัว Ruby 1.9 ที่ประกอบด้วย Environment ต่างๆในตัวเดียว(เกือบครบครัน)
 
-ไปที่ไฟล์ที่โหลดเสร็จแล้ว กดติดตั้งได้เลยจ้า(Default การติดตั้งตามที่เขากำหนดมาให้) 
+จากนั้นไปที่ไฟล์ที่โหลดเสร็จแล้ว กดติดตั้งได้เลยจ้า(Default การติดตั้งตามที่เขากำหนดมาให้) 
 
 เมื่อเสร็จแล้ว เปิด cmd.exe ขึ้นมาเพื่อใช้ command line ให้ไปยังที่ที่เราติดตั้งโปรแกรมไว้ (ตัวอย่างต่อไปนี้เป็น Path ตามที่ผู้เขียนลงโปรแกรมไว้)
 
