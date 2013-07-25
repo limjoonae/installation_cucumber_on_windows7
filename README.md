@@ -18,13 +18,11 @@ C:\capybara>mkdir features
 
 ```
 C:\capybara\features>mkdir support
-```
 และ
-```
 C:\capybara\features>mkdir steps
 ```
 
-หลังจากนั้นก็สร้างไฟล์ที่ชื่อ Gemfile(เป็นไฟล์ไม่ต้องมีนามสกุล) ในตัวของเจ้า capybara ด้วย โดยมีเนื้อไฟล์เบื้องต้นดังนี้
+หลังจากนั้นก็สร้างไฟล์ที่ชื่อ Gemfile(เป็นไฟล์ไม่ต้องมีนามสกุล) เก็บไว้ใน path C:\capybara>
 
 ```gem
 source 'https://rubygems.org'
