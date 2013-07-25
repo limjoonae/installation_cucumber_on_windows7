@@ -23,6 +23,7 @@ C:\capybara\features>mkdir steps
 ```
 
 หลังจากนั้นก็สร้างไฟล์ที่ชื่อ Gemfile(เป็นไฟล์ไม่ต้องมีนามสกุล) เก็บไว้ใน path C:\capybara>
+
 (หมายเหตุ: ในที่นี้ เราจะสร้าง Gemfile สำหรับการ run test บน IE Web Browser)
 
 ```gem
@@ -45,6 +46,7 @@ Use `bundle show [gemname]` to see where a bundled gem is installed.
 ```
 
 เรียบร้อยแล้ว อันดับต่อไป สร้างไฟล์ env.rb ที่ path C:\capybara\features\support
+
 (หมายเหตุ: บรรทัดที่มี # เป็น config สำหรับผู้ที่ต้องการ run test โดยใช้ IE Web Browser)
 
 ```ruby
