@@ -31,6 +31,12 @@ gem 'cucumber-rails', '0.3.2'  #Necessary and Compatible for IE Browser
 gem 'capybara', '0.4.0.rc'     #Necessary and Compatible for IE Browser
 ```
 
+จากนั้น run คำสัง bundle install ไปก่อน 1 ทีเพื่อเรียกใช้ bundle ต่างๆที่จำเป็น
+
+```
+C:\capybara>bundle install
+```
+
 เรียบร้อยแล้ว อันดับต่อไป สร้างไฟล์ env.rb ที่ path C:\capybara\features\support
 
 ```ruby
