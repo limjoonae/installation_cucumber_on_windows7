@@ -39,13 +39,9 @@ require 'selenium-webdriver'  #require for ie browser
 require 'rubygems'				    #require for ie browser
 require 'rspec/expectations'	#require for ie browser
 
-#Capybara.app = "http://www.dealfish.co.th"
-Capybara.app = "http://10.182.247.147:9093/masters/servlet/masters"
-#Capybara.run_server = false
-#Capybara.app_host = 'http://www.dealfish.co.th'
-Capybara.app_host = 'http://10.182.247.147:9093/masters/servlet/masters'
+Capybara.app = "www.google.com" #you can change this default domain
+Capybara.app_host = 'www.google.com'  #you can change this default domain
 Capybara.default_selector = :css
-#Capybara.default_driver = :mechanize
 Capybara.default_driver = :selenium
 Capybara.register_driver :selenium do |app|			#require for ie browser
   Capybara::Selenium::Driver.new(app, :browser => :internet_explorer )
